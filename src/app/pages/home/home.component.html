@@ -1,0 +1,14 @@
+<div class="card" *ngFor="let item of items">
+  <img [src]="item.imageUrls[0]" >
+  
+  <div>
+ {{item.name | uppercase}}
+
+  </div>
+  <div class="stars">
+    {{item.rating}}
+  </div>
+  <div class="desc">
+    {{item.description}}
+  </div>
+</div>

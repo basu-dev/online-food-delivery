@@ -1,0 +1,16 @@
+nav{
+  color:white;
+  font-size:1.1rem;
+  text-transform:uppercase;
+  
+}
+nav ul{
+  padding:10px;
+  background-color:orangered;
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+}
+li{
+  text-decoration:none;
+}
