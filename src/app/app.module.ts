@@ -14,6 +14,8 @@ import { ModalComponent } from './components/Modal/Modal.component';
 import { PaymentFormComponent } from './components/payment-form/payment-form.component';
 import {ToastrModule} from 'ngx-toastr';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -38,6 +40,12 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     ToastrModule.forRoot({
       positionClass: 'toast-bottom-right',
       timeOut: 2000
+    }),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
     }),
 
   ],

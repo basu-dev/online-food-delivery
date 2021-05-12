@@ -1,0 +1,129 @@
+{
+  "configVersion": 1,
+  "timestamp": 1620824805327,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.e6f1cff8a5a4a28f50ed.js",
+        "/manifest.webmanifest",
+        "/polyfills.00096ed7d93ed26ee6df.js",
+        "/runtime.7b63b9fd40098a2e8207.js",
+        "/scripts.5cfd7cee9c03e851d1b5.js",
+        "/styles.b8a091bdd135f4e684f2.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/Chicken-Butter-Masala.jpg",
+        "/assets/Veg-Momo.jpg",
+        "/assets/aloo-tikki-burger.png",
+        "/assets/chips.jpg",
+        "/assets/chowmin.jpg",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/pizza.jpg",
+        "/assets/rice.jpg",
+        "/assets/veg-biryani.jpg",
+        "/fa-brands-400.216edb96b562c79adc09.svg",
+        "/fa-brands-400.329a95a9172fdb2cccb4.woff",
+        "/fa-brands-400.89a52ae1d02b86d61439.eot",
+        "/fa-brands-400.9e138496e8f1719c6ebf.ttf",
+        "/fa-brands-400.c1210e5ebe4344da5083.woff2",
+        "/fa-regular-400.1017bce89c72f95bcf8e.ttf",
+        "/fa-regular-400.19e27d348fefc21941e0.svg",
+        "/fa-regular-400.3672264812746c3c7225.woff",
+        "/fa-regular-400.4079ae2d2a15d0689568.eot",
+        "/fa-regular-400.68c5af1f48e2bfca1e57.woff2",
+        "/fa-solid-900.07c3313b24f7b1ca85ee.ttf",
+        "/fa-solid-900.13de59f1a36b6cb4bca0.svg",
+        "/fa-solid-900.ada6e6df937f7e5e8b79.woff2",
+        "/fa-solid-900.c6ec080084769a6d8a34.woff",
+        "/fa-solid-900.efbd5d20e407bbf85f2b.eot"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/Chicken-Butter-Masala.jpg": "f0b5b0fb443552dc302014fbb5513b58aa0d5b82",
+    "/assets/Veg-Momo.jpg": "f21746348c8dff2de1fd7ae3d80cab0318cfa13d",
+    "/assets/aloo-tikki-burger.png": "14ed54ea51dc5820ab91a74222d6e19362054fdf",
+    "/assets/chips.jpg": "29e12473e5ecee15bd05f590b14a4e9f1ccc0623",
+    "/assets/chowmin.jpg": "4e721ea4a2e4d5e70f96d415e4d1ae5153298459",
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/pizza.jpg": "4a74500532e58eff071732d3fd3fb821964dd96f",
+    "/assets/rice.jpg": "7ea67f2b77b8f7cd3b8cdac7e8ff30d6718cd18b",
+    "/assets/veg-biryani.jpg": "495e82414212e5681848161fa5692592ec491a53",
+    "/fa-brands-400.216edb96b562c79adc09.svg": "24aff44d36f6c4a6a08230474b546b29641c75d6",
+    "/fa-brands-400.329a95a9172fdb2cccb4.woff": "5f8cab91347c553c1eb87f9b527f6bee8a28e40d",
+    "/fa-brands-400.89a52ae1d02b86d61439.eot": "a400bc89d3cb4d45a3b90791800587a1e4ebafa6",
+    "/fa-brands-400.9e138496e8f1719c6ebf.ttf": "3fa2d67cef22da5c3f3eb5730c6afbd6fecf0372",
+    "/fa-brands-400.c1210e5ebe4344da5083.woff2": "fce0da592a3e536d6d5df5b50cb513398d8c5161",
+    "/fa-regular-400.1017bce89c72f95bcf8e.ttf": "7d849a3981a716e2ba4a84634bc57d0b8054a6a3",
+    "/fa-regular-400.19e27d348fefc21941e0.svg": "8d0198777d4c6ff9c39a387f212b4ef732f70abb",
+    "/fa-regular-400.3672264812746c3c7225.woff": "d33d8b5b15b7bba2cc17190dc685fe0a76d2989e",
+    "/fa-regular-400.4079ae2d2a15d0689568.eot": "894064dfd376fc245fe654723d6c81f625e01363",
+    "/fa-regular-400.68c5af1f48e2bfca1e57.woff2": "0447c6b10bbf73f97b23dcfd6e6a48510822cb6e",
+    "/fa-solid-900.07c3313b24f7b1ca85ee.ttf": "c1b9fae262f42868c075ac865a8ab34920e20a2c",
+    "/fa-solid-900.13de59f1a36b6cb4bca0.svg": "33fe5758f3992d8da2635c4fa230b54376dd18d1",
+    "/fa-solid-900.ada6e6df937f7e5e8b79.woff2": "a9922842a120a7f1eaced667480c5e185a106d69",
+    "/fa-solid-900.c6ec080084769a6d8a34.woff": "52751432ded489dfdf27fb1cf64c570c4c27a1d7",
+    "/fa-solid-900.efbd5d20e407bbf85f2b.eot": "b18bdd10beee0a20231aa4c9ea11e84a9307a4fd",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/index.html": "b6c6175cbd6cf02176bab41f5e98d5ff9a0d8648",
+    "/main.e6f1cff8a5a4a28f50ed.js": "c622f1b90f8599389ac53e0ffb74a18b3690dbaf",
+    "/manifest.webmanifest": "80dbe2ba8a2b62a19da4a25900bf6332bb86b486",
+    "/polyfills.00096ed7d93ed26ee6df.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
+    "/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/scripts.5cfd7cee9c03e851d1b5.js": "0ea8e696ed3be952faf34ca522b471d0ac2cc113",
+    "/styles.b8a091bdd135f4e684f2.css": "828d1842cb2061f5ec504e565a55b303603a28e8"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

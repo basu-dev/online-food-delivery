@@ -16,6 +16,7 @@ export class PaymentFormComponent implements OnInit {
   paymentForm:FormGroup;
   totalAmount:number;
   ngOnInit(): void {
+    //Initializing Payment Form
     this.paymentForm=this.fb.group({
       cardNo:['',[Validators.required,
         Validators.pattern(/[\d]{4} [\d]{4} [\d]{4} [\d]{4}/i)
@@ -27,7 +28,7 @@ export class PaymentFormComponent implements OnInit {
     });
     this.totalAmount = this.appService.totalPrice;
   }
-
+//Setting getters so as to make validation inside template simple
   get expiry(){
     return this.paymentForm.get('expiry');
   }
@@ -51,7 +52,7 @@ export class PaymentFormComponent implements OnInit {
     console.log({items,payment});
     this.paymentForm.reset();
     this.appService.addToOrderedItems();
-    this.toastr.success("Payment Successful");
+    this.toastr.success("Order Placement Successful.");
   }
 
 }

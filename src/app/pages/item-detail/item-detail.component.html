@@ -31,13 +31,13 @@
     Add To Cart
   </div>
   <ng-template #itemAddedDiv>
-    <div class="cart-button">
+    <div class="cart-button" [style.background]="itemAdded?'var(--primary-color)':''">
       Item Added To Cart
     </div>
   </ng-template>
-  <div class="buy-button">
+  <!-- <div class="buy-button">
     Buy Now
-  </div>
+  </div> -->
 </div>
   </div>
 </div>
@@ -48,7 +48,7 @@
   <div class="middle">
     <div>
       Send Your Rating : <app-stars [rating]="myRating" [clickable]=true (starClick)="starClick($event)"></app-stars>
-      <div *ngIf="myRating>0">
+      <div *ngIf="showTextarea">
         <div >Your Comment</div>
         <textarea [(ngModel)]="myReview"></textarea>
         <button (click)="saveReview()">Save</button>

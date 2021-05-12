@@ -249,10 +249,8 @@ export class AppService {
   get totalPrice(){
     let sum:number=0;
     this.cartItems.forEach(item=>{
-      console.log(item.price);
       sum+=item.price;
     });
-    console.log("totoal sum",sum);
     return sum;
   }
 

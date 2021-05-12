@@ -24,18 +24,15 @@ orderedItemSub:Subscription;
   ngOnInit(): void {
     this.cartItemSub=this.appService.cartItemSub.subscribe(
       items=>{this.cartItems=items;
-      console.log(items);
       }
     )
     this.orderedItemSub=this.appService.orderedItemSub.subscribe(
       items=>{this.orderedItems=items;
-      console.log(items);
       }
     )
 
     this.appService.sendAllCartItems();
     this.appService.sendAllOrderedItems();
-    console.log(this.cartItems);
   }
   openModal(id:string):void{
     this.modalService.open(id);

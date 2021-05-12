@@ -13,6 +13,8 @@ export class NavbarComponent implements OnInit {
 cartItemCount=0;
 cartItemSub:Subscription;
   ngOnInit(): void {
+    //this sub is needed to show the number of items in 
+    //cart in navbar
     this.cartItemSub=this.appService.cartItemSub.subscribe(
       items=>this.cartItemCount=items.length
     )
