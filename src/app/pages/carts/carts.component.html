@@ -7,11 +7,12 @@
         </div>
         <div class="middle">
             <div class="name">{{item.item.name}}</div>
-            <div>Quantity : {{item.quantity}} , <span>
-               <span>
+            <div>Quantity : {{item.quantity}}</div>
+             <div>
+               
                 Price :
-               </span>  Rs.{{item.price}}
-            </span></div>
+                Rs.{{item.price}}
+             </div>
             
         </div>
         <div class="end" (click)="removeFromCart(item)">
