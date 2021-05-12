@@ -2,6 +2,11 @@
   margin:0;
   padding:0;
 }
-li{
-  text-decoration:none;
+
+:root{
+  --primary-color:orangered;
+  --nav-height:50px;
+  --footer-height:20px;
+  --nav-z-index:10;
+  --overlay-background:#000000aa;
 }

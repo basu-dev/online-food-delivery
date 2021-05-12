@@ -1,0 +1,21 @@
+<div></div>
+<div>
+    <div class="tile" *ngFor="let item of cartItems">
+        <div class="img">
+            <img [src]="item.item.imageUrls[0]">
+        </div>
+        <div class="middle">
+            <div class="name">{{item.item.name}}</div>
+            <div>Quantity : {{item.quantity}}</div>
+        </div>
+        <div class="end">
+            Remove
+        </div>
+    </div>
+    <div class="buy-button">
+       <div class="buy">
+        Buy Now
+       </div> 
+    </div>
+</div>
+<div></div>

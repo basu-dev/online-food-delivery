@@ -1,1 +1,43 @@
-<p>item-detail works!</p>
+<div class="card">
+  <div class="img">
+    <img [src]="item.imageUrls[0]">
+  </div>
+  <div class="detail">
+    <div class="name">
+      {{item.name | uppercase}}
+
+    </div>
+    <div class="price">
+      Rs. <span>
+        {{item.price}}
+      </span>
+     </div>
+
+    <div class="desc">
+      {{item.description}}
+      <br> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni 
+    </div>
+    <br>
+    <div class="stars">
+      <app-stars rating={{item.rating}}></app-stars>
+      <span> {{item.rating}}</span>
+    </div>
+<div >
+  Quantity : <input [(ngModel)]="quantity" min="0" value="1" type="number">
+</div>
+<div class="buttons">
+
+  <div *ngIf="!itemAdded;else itemAddedDiv" class="cart-button" (click)="addToCart()">
+    Add To Cart
+  </div>
+  <ng-template #itemAddedDiv>
+    <div class="cart-button">
+      Item Added To Cart
+    </div>
+  </ng-template>
+  <div class="buy-button">
+    Buy Now
+  </div>
+</div>
+  </div>
+</div>

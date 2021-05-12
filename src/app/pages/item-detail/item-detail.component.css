@@ -1,0 +1,93 @@
+
+.card{
+  border-radius:7px;
+  display:grid;
+  /* padding:20px; */
+  position:relative;
+
+  width:calc(100vw - 100px);
+}
+.card .img{
+  background-color: blue;
+ height:400px; 
+  object-fit:cover;
+  text-align:center;
+
+}
+
+.img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+
+}
+.detail .buttons{
+  display:flex;
+}
+.detail .cart-button,.buy-button{
+  padding:5px 10px;
+  background-color: grey;
+  color:white;
+  margin-top: 10px;
+  width: fit-content;
+  cursor: pointer;
+
+}
+.buy-button{
+  background-color: rgb(9, 214, 9);
+  margin-left:10px;
+}
+
+.detail .cart-button:hover{
+  background-color: var(--primary-color);
+}
+.card .price{
+  margin-top:10px;
+  color:var(--primary-color)
+
+}
+.card .price span{
+  font-size:20px;
+  font-weight:bold;
+}
+
+
+.card .name{
+  font-size:22px;
+  font-size:bolder;
+  letter-spacing:1px;
+  margin-bottom:15px;
+}
+.card .desc{
+  font-size:.9rem;
+  margin-top:5px;
+  color:#333333;
+}
+
+:host{
+  padding:2rem;
+  display:grid;
+  grid-gap:2rem;
+
+}
+.stars{
+ font-weight:bold;
+ color:#333333;
+}
+
+input{
+  margin:5px;
+  padding:5px;
+  width:50px;
+  border:none;
+  border-bottom: 1px solid grey;
+  outline: none;
+}
+
+@media(min-width:900px){
+.card{
+  grid-gap:2rem;
+  grid-template-columns: 2fr 3fr;  }
+}
+
+

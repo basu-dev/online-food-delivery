@@ -1,0 +1,14 @@
+:host{
+  display:flex;
+  flex-direction:column;
+  height:100vh;
+
+}
+router-outlet{
+  margin-top:var(--nav-height);
+
+}
+
+app-home{
+  height:calc(100vh - var(--nav-height) - var(--footer-height));
+} 

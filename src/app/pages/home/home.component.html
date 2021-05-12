@@ -1,14 +1,27 @@
 <div class="card" *ngFor="let item of items">
+  <div class="img">
   <img [src]="item.imageUrls[0]" >
+  </div>
   
-  <div>
+  <div class="name">
  {{item.name | uppercase}}
 
   </div>
   <div class="stars">
-    {{item.rating}}
+    <app-stars rating={{item.rating}}></app-stars> 
+    <span> {{item.rating}}</span>
   </div>
   <div class="desc">
     {{item.description}}
+  </div>
+  <div class="price">
+    Rs. <span>
+{{item.price}}
+
+    </span>  </div>
+  <div class="overlay">
+    <div class="center" (click)="detailPage(item.id)">
+      DETAIL
+    </div>
   </div>
 </div>
