@@ -48,12 +48,14 @@
   <div class="middle">
     <div>
       Send Your Rating : <app-stars [rating]="myRating" [clickable]=true (starClick)="starClick($event)"></app-stars>
+     
       <div *ngIf="showTextarea">
         <div >Your Comment</div>
         <textarea [(ngModel)]="myReview"></textarea>
         <button (click)="saveReview()">Save</button>
       </div>
     </div>
+    <br>
     <div class="tile" *ngFor="let review of item.review">
      
       <div class="img">
