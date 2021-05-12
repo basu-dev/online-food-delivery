@@ -2,5 +2,6 @@ import { Item } from "./item";
 
 export interface CartItem{
     item:Item,
-    quantity:Number,
+    quantity:number,
+    price?:number
 }

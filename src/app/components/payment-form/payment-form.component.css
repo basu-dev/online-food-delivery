@@ -1,0 +1,83 @@
+form{
+    background-color: white;
+    padding: 30px;
+    width:fit-content;
+    border-radius: 10px;
+    
+
+}
+:host{
+    display:contents;
+    
+}
+.form-group{
+    margin-bottom: 1rem;
+}
+
+input{
+    width:300px;
+    border:1px solid var(--primary-color);
+    border-radius: 20px;
+    padding:.7rem 1rem;
+    outline: none;
+    box-shadow: 1px 1px 5px rgb(182, 176, 176);
+}
+.date{
+    width:180px;
+    padding: .6rem 1rem;
+}
+.label{
+    margin-left:10px;
+}
+.cvv{
+    width:calc(100px - 1.5rem);
+    margin-left: 5px;
+}
+.text-danger{
+    color:red;
+    font-size:.9rem;
+}
+.title{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    color:rgb(66, 65, 65);
+}
+
+button{
+    background: none;
+    width: 100%;
+    border:2px solid var(--primary-color);
+    outline: none;
+    color:var(--primary-color);
+    padding:10px .3rem;
+    cursor: pointer;
+    border-radius: 20px;
+    text-transform: uppercase;
+    /* font-size: 20px; */
+    font-weight: 600;
+}
+button:disabled{
+    border:2px solid #994121;
+    color:#994121;
+    cursor: disabled;
+    touch-action: none;
+}
+button:hover{
+    background: var(--primary-color);
+    color:white;
+}
+button:disabled:hover{
+    background: white;
+    color:#994121;
+    cursor: not-allowed;
+}
+input:focus{
+    box-shadow: 1px 1px 5px var(--primary-color);
+}
+input::placeholder{
+    font-family: "Poppins";
+
+}

@@ -3,11 +3,14 @@
     padding:10px;
     /* grid-template-columns: 1fr 2fr 1fr; */
 }
+
+ 
 @media(min-width:760px){
     :host{
     grid-template-columns:1fr 4fr 1fr;
     
   }
+
 }
 @media(min-width:1024px){
     :host{
@@ -73,4 +76,12 @@
     background-color: var(--primary-color);
     color:white;
 }
-
+.label{
+    background: grey;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin:10px 0;
+    color:white;
+    padding:5px;
+}

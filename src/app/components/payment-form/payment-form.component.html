@@ -1,1 +1,37 @@
-<p>payment-form works!</p>
+<form [formGroup]="paymentForm" (submit)="submit()">
+    <div class='title'>Payment</div>
+    <div class="form-group">
+        <div class="label">Card No*</div>
+        <input  type="text" placeholder='5252 5252 5252 5252' formControlName="cardNo">
+        <div class="text-danger" *ngIf="cardNo.touched && cardNo?.errors?.pattern" >Card No. is Invalid</div>
+
+        <div class="text-danger" *ngIf="cardNo.touched && cardNo?.errors?.required" >Card No. is Required</div>
+      </div>
+      <div class="form-group">
+        <div class="form-group-flex">
+            <div class="label">Expiry Date*</div>
+            <input  class="date" type="date" placeholder="yyyy/mm/dd" formControlName="expiry">
+            <input class="cvv" placeholder="CVV" type="number" formControlName="cvv">
+        </div>
+        <div class="text-danger" *ngIf="expiry?.touched && expiry?.errors?.required" >Expiry Date is Required</div>
+        <div class="text-danger" *ngIf="cvv?.touched && cvv?.errors?.min || cvv.errors?.max" >Cvv is Invalid</div>
+
+        <div class="text-danger" *ngIf="cvv?.touched && cvv?.errors?.required" >Cvv is Required</div>
+      </div>
+      <div class="form-group">
+        <div class="label">Location*</div>
+        <input  type="text" formControlName="location">
+
+        <div class="text-danger" *ngIf="location?.touched && location?.errors?.required" >Location is Required</div>
+      </div>
+      <div class="form-group">
+        <div class="label">Contact No.*</div>
+        <input  type="number" formControlName="contact">
+        <div class="text-danger" *ngIf="contact?.touched && contact?.errors?.required" >Contact No. is Required</div>
+        <div class="text-danger" *ngIf=" contact?.errors?.min" >Contact No. is Invalid</div>
+
+      </div>
+
+        <button type="submit"  [disabled]="!paymentForm.valid">Pay Rs.{{totalAmount}}</button>
+      
+</form>

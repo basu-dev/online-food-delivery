@@ -41,3 +41,33 @@
 </div>
   </div>
 </div>
+<div class="label">Reviews</div>
+<div class="reviews">
+
+  <div></div>
+  <div class="middle">
+    <div>
+      Send Your Rating : <app-stars [rating]="myRating" [clickable]=true (starClick)="starClick($event)"></app-stars>
+      <div *ngIf="myRating>0">
+        <div >Your Comment</div>
+        <textarea [(ngModel)]="myReview"></textarea>
+        <button (click)="saveReview()">Save</button>
+      </div>
+    </div>
+    <div class="tile" *ngFor="let review of item.review">
+     
+      <div class="img">
+          <img [src]="review.imageUrl">
+      </div>
+      <div class="middle">
+          <div class="name">{{review.name}}</div>
+          <div>{{review.review}} , <span> 
+          </span></div>
+      </div>
+      <div class="end">
+          <app-stars [rating]="review.stars"></app-stars>
+      </div>
+    </div>
+  </div>
+  <div></div>
+</div>

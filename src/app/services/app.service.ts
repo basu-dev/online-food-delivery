@@ -1,4 +1,3 @@
-import { ThrowStmt } from '@angular/compiler';
 import {Injectable} from '@angular/core';
 import {Observable, of, Subject, throwError} from 'rxjs';
 import { CartItem } from '../models/cartItem';
@@ -18,8 +17,31 @@ export class AppService {
       category: Category.veg,
       isSpecial: false,
       imageUrls: ['/assets/Veg-Momo.jpg'],
-      price: '100',
-      description: "Soy sauce, carrot, cabbage, capsicum, red onion, garlic, ginger"
+      price: 100,
+      description: "Soy sauce, carrot, cabbage, capsicum, red onion, garlic, ginger",
+      review:[
+        {
+          id:1,
+          stars:3,
+          name:"Jon Dovi",
+          review:"This food was ",
+          imageUrl:'https://randomuser.me/api/portraits/men/43.jpg'
+        },
+        {
+          id:1,
+          stars:2,
+          name:"Phillips",
+          review:"This food was notgood",
+          imageUrl:'https://randomuser.me/api/portraits/men/41.jpg'
+        },
+        {
+          id:1,
+          stars:5,
+          name:"Hillary Clinton",
+          review:"This food was awesome",
+          imageUrl:'https://randomuser.me/api/portraits/women/43.jpg'
+        }
+      ]
 
     }, {
       id: 2,
@@ -28,8 +50,31 @@ export class AppService {
       category: Category.veg,
       isSpecial: false,
       imageUrls: ['/assets/pizza.jpg'],
-      price: '350',
-      description: "Hello Wor lcabbage, capsicum, red onion, garlic, ginger"
+      price: 350,
+      description: "Hello Wor lcabbage, capsicum, red onion, garlic, ginger",
+      review:[
+        {
+          id:1,
+          stars:3,
+          name:"Jon Dovi",
+          review:"This food was ",
+          imageUrl:'https://randomuser.me/api/portraits/men/43.jpg'
+        },
+        {
+          id:1,
+          stars:2,
+          name:"Phillips",
+          review:"This food was notgood",
+          imageUrl:'https://randomuser.me/api/portraits/men/41.jpg'
+        },
+        {
+          id:1,
+          stars:5,
+          name:"Hillary Clinton",
+          review:"This food was awesome",
+          imageUrl:'https://randomuser.me/api/portraits/women/43.jpg'
+        }
+      ]
 
     },
     {
@@ -39,7 +84,8 @@ export class AppService {
       category: Category.nonveg,
       isSpecial: false,
       imageUrls: ['/assets/chips.jpg'],
-      price: '150',
+      price: 150,
+      review:[],
       description: "Soy sauce, coriander, tomato ketchup, onion, garlic, ginger, hot"
     },
     {
@@ -49,9 +95,32 @@ export class AppService {
       category: Category.veg,
       isSpecial: false,
       imageUrls: ['/assets/veg-biryani.jpg'],
-      price: '100',
-      description: "Soy sauce, carrot, cabbage, capsicum, red onion, garlic, ginger"
-
+      price: 100,
+      description: "Soy sauce, carrot, cabbage, capsicum, red onion, garlic, ginger",
+      review:[
+        {
+          id:1,
+          stars:3,
+          name:"Jon Dovi",
+          review:"This food was ",
+          imageUrl:'https://randomuser.me/api/portraits/men/43.jpg'
+        },
+        {
+          id:1,
+          stars:2,
+          name:"Phillips",
+          review:"This food was notgood",
+          imageUrl:'https://randomuser.me/api/portraits/men/41.jpg'
+        },
+        {
+          id:1,
+          stars:5,
+          name:"Hillary Clinton",
+          review:"This food was awesome",
+          imageUrl:'https://randomuser.me/api/portraits/women/43.jpg'
+        }
+      ]
+      
 
     },
     {
@@ -61,8 +130,32 @@ export class AppService {
       category: Category.nonveg,
       isSpecial: false,
       imageUrls: ['/assets/aloo-tikki-burger.png'],
-      price: '250',
-      description: "Soy sauce, carrot, cabbage, capsicum, red onion, garlic, ginger"
+      price: 250,
+
+      description: "Soy sauce, carrot, cabbage, capsicum, red onion, garlic, ginger",
+      review:[
+        {
+          id:1,
+          stars:3,
+          name:"Jon Dovi",
+          review:"This food was ",
+          imageUrl:'https://randomuser.me/api/portraits/men/43.jpg'
+        },
+        {
+          id:1,
+          stars:2,
+          name:"Phillips",
+          review:"This food was notgood",
+          imageUrl:'https://randomuser.me/api/portraits/men/41.jpg'
+        },
+        {
+          id:1,
+          stars:5,
+          name:"Hillary Clinton",
+          review:"This food was awesome",
+          imageUrl:'https://randomuser.me/api/portraits/women/43.jpg'
+        }
+      ]
 
     },
     {
@@ -72,8 +165,31 @@ export class AppService {
       category: Category.veg,
       isSpecial: false,
       imageUrls: ['assets/chowmin.jpg'],
-      price: '90',
-      description: "Soy sauce, carrot, cabbage, capsicum, red onion, garlic, ginger"
+      price: 90,
+      description: "Soy sauce, carrot, cabbage, capsicum, red onion, garlic, ginger",
+      review:[
+        {
+          id:1,
+          stars:3,
+          name:"Jon Dovi",
+          review:"This food was ",
+          imageUrl:'https://randomuser.me/api/portraits/men/43.jpg'
+        },
+        {
+          id:1,
+          stars:2,
+          name:"Phillips",
+          review:"This food was notgood",
+          imageUrl:'https://randomuser.me/api/portraits/men/41.jpg'
+        },
+        {
+          id:1,
+          stars:5,
+          name:"Hillary Clinton",
+          review:"This food was awesome",
+          imageUrl:'https://randomuser.me/api/portraits/women/43.jpg'
+        }
+      ]
 
     }, {
       id: 7,
@@ -82,8 +198,31 @@ export class AppService {
       category: Category.veg,
       isSpecial: false,
       imageUrls: ['/assets/rice.jpg'],
-      price: '130',
-      description: "Soy sauce, carrot, cabbage, capsicum, red onion, garlic, ginger"
+      price: 130,
+      description: "Soy sauce, carrot, cabbage, capsicum, red onion, garlic, ginger",
+      review:[
+        {
+          id:1,
+          stars:3,
+          name:"Jon Dovi",
+          review:"This food was ",
+          imageUrl:'https://randomuser.me/api/portraits/men/43.jpg'
+        },
+        {
+          id:1,
+          stars:2,
+          name:"Phillips",
+          review:"This food was notgood",
+          imageUrl:'https://randomuser.me/api/portraits/men/41.jpg'
+        },
+        {
+          id:1,
+          stars:5,
+          name:"Hillary Clinton",
+          review:"This food was awesome",
+          imageUrl:'https://randomuser.me/api/portraits/women/43.jpg'
+        }
+      ]
 
     }
   ]
@@ -96,14 +235,26 @@ export class AppService {
         category: Category.veg,
         isSpecial: false,
         imageUrls: ['assets/chowmin.jpg'],
-        price: '90',
+        price: 90,
         description: "Soy sauce, carrot, cabbage, capsicum, red onion, garlic, ginger"
   
       },
-      quantity:3
+      quantity:3,
+      price:270
     }
   ];
+  orderedItems:CartItem[]=[]
   cartItemSub = new Subject<CartItem[]>();
+  orderedItemSub = new Subject<CartItem[]>();
+  get totalPrice(){
+    let sum:number=0;
+    this.cartItems.forEach(item=>{
+      console.log(item.price);
+      sum+=item.price;
+    });
+    console.log("totoal sum",sum);
+    return sum;
+  }
 
   fetchMenu$(): Observable<Item[]> {
     return of(this.items);
@@ -112,20 +263,56 @@ export class AppService {
     this.cartItemSub.next(this.cartItems);
 
   }
-  addItemsToCart(item:Item,quantity:Number):Observable<boolean | any>{
+  sendAllOrderedItems(){
+    this.orderedItemSub.next(this.orderedItems);
+  }
+  addItemsToCart(item:Item,quantity:number):Observable<boolean | any>{
     let avItem  = this.cartItems.find(cartItem=>cartItem.item == item);
     if(avItem){
       return throwError("Item already added")
     }
-    this.cartItems.push({item,quantity});
+    let price = item.price * quantity;
+    this.cartItems.push({item,quantity,price});
     this.sendAllCartItems();
     return of(true);
   }
-  removeItemFromCart(item:CartItem){
-    this.cartItems = this.cartItems.filter(cartItem=>item!=item);
+  
+  removeItemFromCart(item:CartItem):Observable<boolean>{
+    this.cartItems = this.cartItems.filter(cartItem=>cartItem.item.id!=item.item.id);
     this.sendAllCartItems();
+    return of(true);
+
   }
-  getMenuById$(id: Number): Observable<Item> {
+  getMenuById$(id: number): Observable<Item> {
     return of(this.items.find(item => item.id == id));
   }
+
+  addToOrderedItems():void{
+    this.cartItems.forEach(item=>this.orderedItems.push(item));
+    this.cartItems=[];
+    this.sendAllCartItems();
+    this.sendAllOrderedItems();
+  }
+
+  addReview(star:number,reivew:String,id:number):void{
+    let item = this.items.find(item=>item.id==id);
+    item.review.unshift({
+      name:"Test Name",
+      id:5,
+      review:reivew,
+      imageUrl:"https://randomuser.me/api/portraits/men/45.jpg",
+      stars:star
+    });
+    let totalPersons = item.review.length;
+    let totalRating = item.rating * (totalPersons -1)+ star;
+    let newRating = totalRating / totalPersons;
+    newRating = Number.parseFloat(newRating.toFixed(2));
+    item.rating = newRating;
+  
+  
+    let removedlist = this.items.filter(item=>item.id != id);
+    removedlist.unshift(item);
+  }
+
+
 }

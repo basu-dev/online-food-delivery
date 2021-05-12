@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 *{
   margin:0;
   padding:0;
@@ -9,4 +10,10 @@
   --footer-height:20px;
   --nav-z-index:10;
   --overlay-background:#000000aa;
+}
+body{
+  font-family: "Poppins";
+}
+router-outlet + *{
+  padding:70px 20px  !important;
 }

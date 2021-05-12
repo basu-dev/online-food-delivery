@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
       (err: any) => console.error(err)
     )
   }
-  detailPage(id: Number): void {
+  detailPage(id: number): void {
     this.router.navigateByUrl("/foodDetail/" + id)
   }
 }

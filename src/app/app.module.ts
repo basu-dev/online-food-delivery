@@ -12,6 +12,9 @@ import { CartsComponent } from './pages/carts/carts.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ModalComponent } from './components/Modal/Modal.component';
 import { PaymentFormComponent } from './components/payment-form/payment-form.component';
+import {ToastrModule} from 'ngx-toastr';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -28,8 +31,15 @@ import { PaymentFormComponent } from './components/payment-form/payment-form.com
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     FormsModule,
-    ReactiveFormsModule
+    ToastrModule,
+    ReactiveFormsModule,
+    ToastrModule.forRoot({
+      positionClass: 'toast-bottom-right',
+      timeOut: 2000
+    }),
+
   ],
   providers: [],
   bootstrap: [AppComponent]

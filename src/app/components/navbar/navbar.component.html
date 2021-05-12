@@ -1,8 +1,12 @@
 <nav>
   <ul>
-    <li class="company-name" [routerLink]="'/'">Foodle</li>
-    <li>Menu</li>
-    <li>Login</li>
-    <li [routerLink]="'/cart'">Cart<sup>{{cartItemCount}}</sup></li>
+    <li class="company-name" [routerLink]="'/'">
+      <i class="fas fa-utensils"></i>
+      Foodle
+    </li>
+    
+    <li [routerLink]="'/cart'"> 
+      <i class="fas fa-cart-plus"></i>
+      <sup>{{cartItemCount}}</sup></li>
   </ul>
 </nav>

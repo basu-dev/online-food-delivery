@@ -13,32 +13,42 @@ export class ItemDetailComponent implements OnInit {
   constructor(private route: ActivatedRoute,
     private appService: AppService
   ) {}
-  quantity:Number=1;
+  quantity:number=1;
   itemAdded:boolean=false;
-  id: Number;
+  myRating=0;
+  myReview:String;
+  id: number;
   item: Item;
   ngOnInit(): void {
     this.route.params.subscribe((param: any) => {
       this.id = param['id'],
-        this.appService.getMenuById$(this.id).subscribe(
-          (item: Item) => this.item = item,
-          (err: any) => console.log(err)
-        )
-      console.log(this.id)
+      this.getItem();
     },
       (err: any) => console.log(err)
     )
     this.checkItemAlreadyAdded();
 
   }
-
+  getItem(){
+    this.appService.getMenuById$(this.id).subscribe(
+      (item: Item) => this.item = item,
+      (err: any) => console.log(err)
+    )
+  }
   addToCart():void{
     this.appService.addItemsToCart(this.item,this.quantity).subscribe(
       data=>this.itemAdded=data,
       err=>console.log(err)
     );
-    console.log(this.appService.cartItems)
+    // console.log(this.itemAdded)
   }
+  starClick(ev:number):void{
+  this.myRating=ev;
+  }
+  saveReview(){
+    this.appService.addReview(this.myRating,this.myReview,this.id);
+  }
+
   checkItemAlreadyAdded():void{
     let item = this.appService.cartItems.find(item=>item.item == this.item);
     if(item){

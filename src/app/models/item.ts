@@ -1,12 +1,15 @@
+import { Review } from "./review";
+
 export interface Item {
-  id?: Number,
+  id?: number,
   name: String,
   description?: String,
-  rating: Number,
+  rating: number,
   category: Category,
   isSpecial: boolean,
   imageUrls: String[],
-  price: String
+  price: number,
+  review?:Review[]
 }
 export enum Category {
   veg,

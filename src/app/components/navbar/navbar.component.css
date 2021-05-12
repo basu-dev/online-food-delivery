@@ -13,8 +13,12 @@ nav ul{
   height:var(--nav-height);
   background-color:orangered;
   display:flex;
-  justify-content:space-evenly;
+  justify-content:space-between;
+  padding:0 50px 0 30px;
   align-items:center;
+}
+.company-name{
+  font-size: 1.1rem;
 }
 li{
   list-style: none;
@@ -22,6 +26,7 @@ li{
   position: relative;
   outline: none;
   user-select: none;
+  
 }
 sup{
   height:20px;
