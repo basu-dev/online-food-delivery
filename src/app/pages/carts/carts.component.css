@@ -35,4 +35,12 @@
     background-color: var(--primary-color);
     color:white;
 }
-
+.label{
+    background: grey;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin:10px 0;
+    color:white;
+    padding:5px;
+}
