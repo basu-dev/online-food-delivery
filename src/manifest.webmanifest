@@ -1,8 +1,8 @@
 {
   "name": "Fooddle",
   "short_name": "Fooddle",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "theme_color": "orangered",
+  "background_color": "orangered",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",

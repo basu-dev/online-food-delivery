@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1620909450215,
+  "timestamp": 1620932086939,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -17,8 +17,7 @@
         "/manifest.webmanifest",
         "/polyfills.00096ed7d93ed26ee6df.js",
         "/runtime.7b63b9fd40098a2e8207.js",
-        "/scripts.5cfd7cee9c03e851d1b5.js",
-        "/styles.d4732f9c0f6e314a9267.css"
+        "/styles.6a6716bedaf6178342f0.css"
       ],
       "patterns": []
     },
@@ -31,6 +30,7 @@
       },
       "urls": [
         "/assets/Chicken-Butter-Masala.jpg",
+        "/assets/NotesBackup-2021-4-13-22-48-11.json",
         "/assets/Veg-Momo.jpg",
         "/assets/aloo-tikki-burger.png",
         "/assets/chips.jpg",
@@ -68,6 +68,7 @@
   "dataGroups": [],
   "hashTable": {
     "/assets/Chicken-Butter-Masala.jpg": "f0b5b0fb443552dc302014fbb5513b58aa0d5b82",
+    "/assets/NotesBackup-2021-4-13-22-48-11.json": "69067565d4b09669cff3d45de6439495968841ba",
     "/assets/Veg-Momo.jpg": "f21746348c8dff2de1fd7ae3d80cab0318cfa13d",
     "/assets/aloo-tikki-burger.png": "14ed54ea51dc5820ab91a74222d6e19362054fdf",
     "/assets/chips.jpg": "29e12473e5ecee15bd05f590b14a4e9f1ccc0623",
@@ -99,13 +100,12 @@
     "/fa-solid-900.c6ec080084769a6d8a34.woff": "52751432ded489dfdf27fb1cf64c570c4c27a1d7",
     "/fa-solid-900.efbd5d20e407bbf85f2b.eot": "b18bdd10beee0a20231aa4c9ea11e84a9307a4fd",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "03309a4f4fa8622132eeb22af53ad0fc54d9a962",
+    "/index.html": "6883f3859f0d73a3543b7339ecd4fdf27f7d4f36",
     "/main.91a3619b2d15e13bea83.js": "435ba9ccfeab0014e7e734aedf2c91a638d3f082",
-    "/manifest.webmanifest": "80dbe2ba8a2b62a19da4a25900bf6332bb86b486",
+    "/manifest.webmanifest": "3953aeabe8915ec6c6b122178632d67df6d160d0",
     "/polyfills.00096ed7d93ed26ee6df.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
     "/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "/scripts.5cfd7cee9c03e851d1b5.js": "0ea8e696ed3be952faf34ca522b471d0ac2cc113",
-    "/styles.d4732f9c0f6e314a9267.css": "f6b3914ebbeeb6f059608610909715cd099ca3e6"
+    "/styles.6a6716bedaf6178342f0.css": "f6b3914ebbeeb6f059608610909715cd099ca3e6"
   },
   "navigationUrls": [
     {
