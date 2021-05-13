@@ -16,6 +16,7 @@ import {ToastrModule} from 'ngx-toastr';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { CartItemComponent } from './components/cart-item/cart-item.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { environment } from '../environments/environment';
     StarsComponent,
     CartsComponent,
     ModalComponent,
-    PaymentFormComponent
+    PaymentFormComponent,
+    CartItemComponent
   ],
   imports: [
     BrowserModule,

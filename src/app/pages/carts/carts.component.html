@@ -1,49 +1,20 @@
 <div></div>
 <div>
-    <div class="label" *ngIf="cartItems.length > 0">Items In Cart</div>
-    <div class="tile" *ngFor="let item of cartItems">
-        <div class="img">
-            <img [src]="item.item.imageUrls[0]">
-        </div>
-        <div class="middle">
-            <div class="name">{{item.item.name}}</div>
-            <div>Quantity : {{item.quantity}}</div>
-             <div>
-               
-                Price :
-                Rs.{{item.price}}
-             </div>
-            
-        </div>
-        <div class="end" (click)="removeFromCart(item)">
-            Remove
-        </div>
+    <ng-template [ngIf]="cartItems.length >0">
+         <div class="label">Items In Cart</div>
+         <app-cart-item [endtext]="'Remove'" (onend)="removeFromCart(item)" *ngFor="let item of cartItems" [item]="item"></app-cart-item>
+         <div class="buy-button" >
+         <div class="buy" (click)="openModal('payment-modal')">
+              Buy Now
+        </div> 
     </div>
-    <div class="buy-button" *ngIf="cartItems.length > 0">
-       <div class="buy" (click)="openModal('payment-modal')">
-        Buy Now
-       </div> 
-    </div>
-    <div class="label" *ngIf="orderedItems.length > 0">Ordered Items</div>
-    <div *ngIf="orderedItems.length > 0">Your orders will be on your doorstesp within an hour. Please be patient.</div>
-    <br>
-    <div class="tile" *ngFor="let item of orderedItems">
-        <div class="img">
-            <img [src]="item.item.imageUrls[0]">
-        </div>
-        <div class="middle">
-            <div class="name">{{item.item.name}}</div>
-            <div>Quantity : {{item.quantity}} 
-                <div>
-                Price : Rs.{{item.price}}
-            </div></div>
-            
-        </div>
-        <div class="end">
-            Cancel
-        </div>
-    </div>
-</div>
+    </ng-template>
+    <ng-template [ngIf]="orderedItems.length > 0">
+         <div class="label" >Ordered Items</div>
+         <div>Your orders will be on your doorstesp within an hour. Please be patient.</div>
+        <app-cart-item [endtext]="'Cancel'" *ngFor="let item of orderedItems" [item]="item"></app-cart-item>
+    </ng-template>
+ </div>
 <div></div>
 <jw-modal id="payment-modal"  >
     <app-payment-form></app-payment-form>

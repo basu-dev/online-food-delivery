@@ -1,0 +1,16 @@
+    <div class="tile" >
+        <div class="img">
+            <img [src]="item.item.imageUrls[0]">
+        </div>
+        <div class="middle">
+            <div class="name">{{item.item.name}}</div>
+            <div>Quantity : {{item.quantity}} 
+                <div>
+                Price : Rs.{{item.price}}
+            </div></div>
+            
+        </div>
+        <div (click)="onend.emit()" class="end">
+            {{endtext}} 
+        </div>
+    </div>
