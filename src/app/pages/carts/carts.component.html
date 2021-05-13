@@ -25,17 +25,18 @@
        </div> 
     </div>
     <div class="label" *ngIf="orderedItems.length > 0">Ordered Items</div>
+    <div *ngIf="orderedItems.length > 0">Your orders will be on your doorstesp within an hour. Please be patient.</div>
+    <br>
     <div class="tile" *ngFor="let item of orderedItems">
         <div class="img">
             <img [src]="item.item.imageUrls[0]">
         </div>
         <div class="middle">
             <div class="name">{{item.item.name}}</div>
-            <div>Quantity : {{item.quantity}} , <span>
-               <span>
-                Price :
-               </span>  Rs. {{item.price}}
-            </span></div>
+            <div>Quantity : {{item.quantity}} 
+                <div>
+                Price : Rs.{{item.price}}
+            </div></div>
             
         </div>
         <div class="end">

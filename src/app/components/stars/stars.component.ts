@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-stars',
@@ -6,10 +6,10 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./stars.component.css']
 })
 export class StarsComponent implements OnInit {
-  constructor() { }
+  constructor() {}
   @Input() rating = 2.75;
   @Input() clickable = false;
-  @Input() itemId;
+  @Input() itemId: number;
   @Output() public starClick = new EventEmitter<number>();
 
   starPercentageRounded = '';
@@ -31,7 +31,7 @@ export class StarsComponent implements OnInit {
 
     this.starClick.emit(star);
   }
-//calculate the star to be displayed in template
+  //calculate the star to be displayed in template
   calculatePercentage() {
     const starTotal = 5;
     let starPercentage = (this.rating / starTotal) * 100;
